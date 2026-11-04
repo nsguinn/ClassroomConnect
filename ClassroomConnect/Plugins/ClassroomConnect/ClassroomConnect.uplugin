@@ -1,0 +1,16 @@
+{
+  "FileVersion": 3,
+  "Version": 5,
+  "VersionName": "0.5.0",
+  "FriendlyName": "Classroom Connect",
+  "Description": "Classroom entry point for Unreal Multi-User collaboration: pick a team, pick a role, host or join.",
+  "Category": "Editor",
+  "CanContainContent": false,
+  "SupportedTargetPlatforms": ["Win64"],
+  "Modules": [{"Name": "ClassroomConnect", "Type": "Editor", "LoadingPhase": "PostEngineInit", "PlatformAllowList": ["Win64"]}],
+  "Plugins": [
+    {"Name": "ConcertMain", "Enabled": true},
+    {"Name": "ConcertSyncClient", "Enabled": true},
+    {"Name": "MultiUserClient", "Enabled": true}
+  ]
+}

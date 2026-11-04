@@ -1,0 +1,25 @@
+{
+  "_comment": "Copy to <plugin folder>/Config/ClassroomTeams.json to rename teams without recompiling. Id must stay 1-24 ASCII letters/digits and unique: it is part of the Multi-User session name (UCC-<Id>). Name is the label students see. Up to 20 teams.",
+  "Teams": [
+    { "Id": "Red",     "Name": "Red",     "Color": "#D32F2F" },
+    { "Id": "Blue",    "Name": "Blue",    "Color": "#1E63D6" },
+    { "Id": "Green",   "Name": "Green",   "Color": "#2E9E44" },
+    { "Id": "Yellow",  "Name": "Yellow",  "Color": "#F2C200" },
+    { "Id": "Orange",  "Name": "Orange",  "Color": "#F57C00" },
+    { "Id": "Purple",  "Name": "Purple",  "Color": "#7B3FB6" },
+    { "Id": "Pink",    "Name": "Pink",    "Color": "#F06292" },
+    { "Id": "Cyan",    "Name": "Cyan",    "Color": "#00ACC1" },
+    { "Id": "Lime",    "Name": "Lime",    "Color": "#9CCC22" },
+    { "Id": "Teal",    "Name": "Teal",    "Color": "#00897B" },
+    { "Id": "Indigo",  "Name": "Indigo",  "Color": "#3949AB" },
+    { "Id": "Magenta", "Name": "Magenta", "Color": "#D01FA8" },
+    { "Id": "Gold",    "Name": "Gold",    "Color": "#C9A227" },
+    { "Id": "Silver",  "Name": "Silver",  "Color": "#A8AEB5" },
+    { "Id": "Black",   "Name": "Black",   "Color": "#202124" },
+    { "Id": "White",   "Name": "White",   "Color": "#F5F5F5" },
+    { "Id": "Brown",   "Name": "Brown",   "Color": "#795548" },
+    { "Id": "Coral",   "Name": "Coral",   "Color": "#FF7F61" },
+    { "Id": "Navy",    "Name": "Navy",    "Color": "#1A2A6C" },
+    { "Id": "Mint",    "Name": "Mint",    "Color": "#7FD8B0" }
+  ]
+}
