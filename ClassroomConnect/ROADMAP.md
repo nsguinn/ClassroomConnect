@@ -17,13 +17,13 @@ Machine used: Windows 11, Unreal Engine 5.8.4 (CL 58902052) at `C:\Program Files
 | 4 — Project distribution | **Verified for folder transfer** (publish/install with SHA-256 manifest, pinned identity, staging, no overwrite): 29 checks. Not yet: incremental update, interrupted-transfer reuse, HTTP endpoint, real SMB share. |
 | 5 — Complete workflow | **Partly verified.** Helper `launch` builds the editor command line with native auto-connect flags (11 checks, including against the installed editor). Not yet: plugin ↔ helper IPC, automatic baseline install, safe relaunch from the plugin. |
 | Deployment | **Release zip built; per-user route and deploy checks verified on this PC.** `Build-Release.ps1` packages the plugin, installers, IT deploy script, helper, log collector and docs (14.7 MB). The no-admin route (`UE_ADDITIONAL_PLUGIN_PATHS`) loads the plugin in a project that does not reference it. `Deploy-ClassroomConnect.ps1 -CheckOnly` reports reachable/matching computers. Not yet run: an Engine-scope install (needs administrator) and deployment to other computers. Fab upload zip builds and compiles from its own contents; listing and submission are the seller's. |
-| 6 — Classroom validation | **Blocked by the lab firewall (2026-11-04); checklist ready** ([Docs/CLASSROOM-TEST.md](Docs/CLASSROOM-TEST.md)). First two-PC test (team Red): the leader saw its own server, the member saw none. The lab's managed firewall policy has no rule for the Unreal programs; `Check-ClassroomNetwork.ps1` reported all three programs Blocked (exit 2). Needs the inbound rule in [Docs/NETWORK.md](Docs/NETWORK.md) from whoever manages the policy, then a rerun. |
+| 6 — Classroom validation | **Planned; checklist ready** ([Docs/CLASSROOM-TEST.md](Docs/CLASSROOM-TEST.md)). Before testing between computers, run the network check on each of them ([Docs/NETWORK.md](Docs/NETWORK.md)). |
 
 ## Next steps, in order
 
 1. Open the window in a normal (rendering) editor; confirm tiles, role toggle, status and diagnostics; host and join from the buttons.
 2. With two editors joined, record what synchronises (actor move, new actor, material edit, Blueprint edit, save) and what the leave/persist prompts do.
-3. Two PCs on the lab network: once IT adds the inbound UDP rule for the Unreal programs (Docs/NETWORK.md), run `Check-ClassroomNetwork.ps1` on both computers, then repeat the two-computer test; record the result per room. Static endpoints only after that, if less multicast traffic is wanted.
+3. Two PCs: run `Check-ClassroomNetwork.ps1` on both computers (Docs/NETWORK.md), then the two-computer test; record the result per room. Static endpoints only after that, if less multicast traffic is wanted.
 4. Plugin ↔ helper: when Join finds a different project, ask the helper to install the leader's published baseline and relaunch with `launch`.
 5. Helper: incremental update from an existing student copy with local-change detection and backup instead of refusal.
 6. Session restart between classes (`ArchiveNameOverride` / restore), host crash, late join.

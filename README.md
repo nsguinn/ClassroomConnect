@@ -48,8 +48,8 @@ Only results that were actually observed are reported. See [TESTING.md](Classroo
 | Plugin builds and loads in UE 5.8.4 | ✅ Verified |
 | Host, join, marker colors, leader save, project copy, join codes | ✅ Verified with headless editors on one computer |
 | Window used interactively | ✅ Host and join from the window on one computer |
-| Two lab computers | ⛔ Blocked by the lab's firewall policy until IT adds an inbound rule ([NETWORK.md](ClassroomConnect/Docs/NETWORK.md)) |
-| Full classroom test (5 teams) | 📋 Planned ([CLASSROOM-TEST.md](ClassroomConnect/Docs/CLASSROOM-TEST.md)) |
+| Between computers | 🔎 Network check: each computer must accept Unreal's Multi-User traffic; run `Check-ClassroomNetwork.ps1` first ([NETWORK.md](ClassroomConnect/Docs/NETWORK.md)) |
+| Full classroom test (several teams) | 📋 Planned ([CLASSROOM-TEST.md](ClassroomConnect/Docs/CLASSROOM-TEST.md)) |
 | Which asset edits synchronize | Not yet recorded |
 
 ## Install (no GitHub knowledge needed)

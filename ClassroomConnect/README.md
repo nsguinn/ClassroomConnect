@@ -8,7 +8,7 @@ Building, testing and the internals of the plugin, the optional helper and the s
 - Concert public headers and the Multi-User server executable are installed.
 - The helper compiles with the engine's bundled .NET 10.0.203 SDK and passes **40 executable checks** under Windows PowerShell 5.1 (see [TESTING.md](TESTING.md)).
 - **The plugin compiles** with `RunUAT BuildPlugin` against the installed 5.8.4 engine using Visual Studio 2026 (MSVC 14.51.36260, which UBT flags as newer than its preferred 14.50) and Windows SDK 10.0.26100: `BUILD SUCCESSFUL`, no warnings from plugin code (2026-11-03).
-- Hosting, joining, presence markers, leader save, project copy and join codes have been exercised with headless editors on one computer ([TESTING.md](TESTING.md)). Between two lab computers the test is blocked by the lab firewall policy until IT adds an inbound rule ([Docs/NETWORK.md](Docs/NETWORK.md)); see [ROADMAP.md](ROADMAP.md).
+- Hosting, joining, presence markers, leader save, project copy and join codes have been exercised with headless editors on one computer ([TESTING.md](TESTING.md)). Between computers, each computer's firewall must accept Unreal's Multi-User traffic: check with `Scripts/Check-ClassroomNetwork.ps1` ([Docs/NETWORK.md](Docs/NETWORK.md)); see [ROADMAP.md](ROADMAP.md).
 
 ## Install in a classroom, publish on Fab
 

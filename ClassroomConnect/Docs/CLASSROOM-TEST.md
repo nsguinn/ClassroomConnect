@@ -1,6 +1,6 @@
 # Classroom test: about 5 teams
 
-Goal: find out, with real students and computers, whether Classroom Connect works across a real school network for several teams at once, and collect evidence. Everything so far was verified with editors on **one** computer; discovery between computers on a real network has never been tried and is the biggest unknown.
+Goal: find out, with real students and computers, whether Classroom Connect works across a real school network for several teams at once, and collect evidence. Everything so far was verified with editors on **one** computer; discovery between computers depends on each network's firewall and is the biggest unknown, so start with the network check (NETWORK.md).
 
 ## Before class (instructor or IT, about 30 minutes)
 

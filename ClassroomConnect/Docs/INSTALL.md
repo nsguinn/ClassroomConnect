@@ -4,7 +4,7 @@ The package `ClassroomConnect-<version>-UE5.8.4-Win64.zip` (made by `Scripts\Bui
 
 Nothing else is changed: no services, firewall rules, group policies or other plugins.
 
-## Option A: IT installs on all lab computers at once (recommended for 15–20 workstations)
+## Option A: IT installs on all lab computers at once (recommended for a whole lab)
 
 Unzip the package on any computer on the network and run, as an account that is an administrator on the lab computers:
 

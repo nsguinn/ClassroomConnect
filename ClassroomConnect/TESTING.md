@@ -127,9 +127,9 @@ Both passing cases rejoined sessions left over from the failed run (the server h
 
 Not shown by these runs: synchronisation of an actual edit, discovery between two computers on a real network, the window UI, leaving/ending through the prompts (they are modal dialogs, which `-unattended` auto-answers). The member logged a Concert warning `Failed to load presence actor class ''` (presence avatars are not shown headless).
 
-### Two lab computers
+### Between computers
 
-2026-11-04, team Red, run by the user from the window (0.4.0, no join code): **failed, blocked by the firewall.** The leader's computer (PC-A) showed `Local Multi-User server running: yes` and `Servers discovered: 1` (its own); the member's computer (PC-B) showed `Servers discovered: 0`. On the leader's computer, `Scripts/Check-ClassroomNetwork.ps1` reported all three Unreal programs **Blocked** (exit code 2): the managed firewall policy allows no incoming UDP for them, so a rule has to come from whoever manages that policy ([Docs/NETWORK.md](Docs/NETWORK.md)). The member's computer was not checked. Discovery between computers is untested until that rule is in place.
+Not shown working yet. Before testing, run `Scripts/Check-ClassroomNetwork.ps1` on every computer ([Docs/NETWORK.md](Docs/NETWORK.md)): if a firewall blocks the Unreal programs, the leader still sees its own server but members see `Servers discovered: 0`.
 
 ## Installation and packaging
 
